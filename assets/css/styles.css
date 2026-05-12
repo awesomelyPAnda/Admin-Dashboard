@@ -1,3 +1,13 @@
+:root{
+    --dark-background-color: #373f51;
+    --dark-transition-bg-color:#292e3c;
+    --primary-background-color: #a9bcd0;
+    --light-background0-color: #d8dbe2;
+}
+
+
+
+
 body{
     font-family:"Ubuntu", sans-serif;
     margin: 0;
@@ -11,22 +21,22 @@ body{
 .sidebar{
     width: 15vw;
     height: 100vh;
-    background-color: #373f51;
+    background-color: var(--dark-background-color);
     display: flex;
     flex-direction: column;
-    gap: 30px;
+    gap: 45px;
 }
 
 .right-container{
     width: 85vw;
-    background-color: #a9bcd0;
+    background-color: var(--primary-background-color);
     display: flex;
     flex-direction: column;
 }
 
 .top{
     height: 20vh;
-    background-color : #d8dbe2;
+    background-color : var(--light-background0-color);
 }
 
 .bottom{
@@ -35,16 +45,44 @@ body{
 
 .title{
     margin-left: 5px;
-    margin-top: 10px;
+    margin-top: 5px;
     display: flex;
-    gap: 10px;
+    gap: 7px;
+    margin-right: 5px;
+}
+
+.title-image{
+    width: 70px;
+    height:70px;
 }
 
 .sidebar-text.title{
-    margin-top: 17px;
+    margin-top: 12px;
 }
 
 .sidebar-text{
-    color: #a9bcd0;
+    color: var(--primary-background-color);
+}
+
+.link{
+    padding: 10px;
+    display: flex;
+    gap: 10px;
+    
+}
+
+.link:hover{
+    transition: all 0.1s ease-in-out;
+    background-color: var(--dark-transition-bg-color);
+}
+
+.favicon{
+    width: 36px;
+    height: 36px;
+}
+
+.sidebar-text.link{
+    text-decoration: none;
+    font-size: 1.1rem;
 }
 
