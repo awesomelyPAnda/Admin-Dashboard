@@ -24,7 +24,7 @@ body{
 }
 
 .sidebar{
-    width: 15vw;
+    width: 14vw;
     height: 175vh;
     background-color: var(--dark-background-color);
     display: flex;
@@ -33,7 +33,7 @@ body{
 }
 
 .right-container{
-    width: 85vw;
+    width: 86vw;
     background-color: var(--primary-background-color);
     display: flex;
     flex-direction: column;
@@ -258,6 +258,16 @@ input[type="text"]:focus{
 
 .left-container{
     width: 64vw;
+    padding-top: 32px;
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+}
+
+.your-posts-title{
+    font-size: 1.5rem;
+    margin-left: 30px;
+    color:var(--dark-transition-bg-color)
 }
 
 .right{
@@ -272,10 +282,11 @@ input[type="text"]:focus{
     justify-content: center;
     align-items: center;
     padding-top: 15px;
+    margin-right: 5px;
 }
 .announcements-box{
     background-color: var(--light-background0-color);
-    padding: 10px;
+    padding: 5px;
     border-radius: 14px;
     text-align: center;
     box-shadow: var(--primary-transition-color) 7px 7px 7px;
@@ -324,3 +335,44 @@ hr{
 .text-container{
      text-align: center;
 }
+
+
+.post-favicon{
+    width: 24px;
+    height: 24px;
+}
+
+.grid{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repear(3, 1fr);
+    row-gap: 80px;
+    column-gap: 40px;
+    margin-left: 20px;
+    margin-right: 10px;
+}
+
+.post{
+    border-left: var(--dark-transition-bg-color) 10px solid;
+    background-color: var(--light-background0-color);
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.post-minititle, .post-description{
+    margin-left: 20px;
+}
+
+.post-minititle{
+    color: var(--dark-transition-bg-color);
+}
+
+.post-favicons{
+    display: flex;
+    gap: 12px;
+}
+
+.post div{
+    justify-content: right;
+}
+
